@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+/* Global Link & List styles */
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* Logo */
+.logo h1 {
+    background-image: linear-gradient(45deg, #171eee, #282e34);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+.navlinks ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+.links a {
+    color: hsl(229, 31%, 21%);
+}
+.links a:hover {
+    color: #6a86c4;
+}
+.bar-btn {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-sec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    gap: 40px;
+}
+.hero-sec .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.hero-sec .header .btn {
+    width: fit-content;
+    background-image: linear-gradient(45deg, #1a1c5d, #282e34);
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-sec .header .btn:hover {
+    background-image: none;
+    color: #0b0f75;
+}
+.hero-sec h2 {
+    color: #21243D;
+    font-size: 40px;
+}
+.hero-sec p {
+    font-size: 16px;
+}
+.hero-sec span {
+    background-image: linear-gradient(45deg, #0b0f75, #282e34);
+    color: white;
+    padding: 7px 13px;
+}
+.hero-sec img {
+    width: 28em;
+    height: 28em;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff; /* Fallback background */
+}
+.hero-sec img:hover {
+    box-shadow: 0px 0px 9px 4px #0b0f75;
+}
+
+/* Content Sections */
+section {
+    padding: 60px 80px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.about, .work, .contact {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+.about h1, .work h1, .contact h1, .skills h1 {
+    background-color: #21243D;
+    color: white;
+    padding: 10px 60px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.skills .skills-list ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-items: center;
+}
+
+/* Mobile Navigation */
+.navlinks.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+/* For tablets and small desktops */
+@media screen and (max-width: 800px) {
+    nav {
+        padding: 20px 40px;
+    }
+    .navlinks {
+        display: none;
+    }
+    .bar-btn {
+        display: block;
+    }
+    .hero-sec {
+        flex-direction: column;
+        padding: 20px 40px;
+        text-align: center;
+    }
+    .hero-sec img {
+        width: 20em;
+        height: 20em;
+    }
+    section {
+        padding: 40px 20px;
+    }
+    .skills .skills-list ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 500px) {
+    nav {
+        padding: 15px 20px;
+    }
+    .hero-sec {
+        padding: 15px 20px;
+    }
+    .hero-sec h2 {
+        font-size: 32px;
+    }
+    .hero-sec img {
+        width: 15em;
+        height: 15em;
+    }
+    section {
+        padding: 30px 15px;
+    }
+}
