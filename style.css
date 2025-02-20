@@ -51,7 +51,7 @@ nav {
 .links a:hover {
     color: #6a86c4;
 }
-.bar-btn {
+.bar-btn  {
     display: none;
     cursor: pointer;
 }
@@ -80,8 +80,17 @@ nav {
     border-radius: 5px;
     cursor: pointer;
 }
+.hero-sec .header .btn a {
+    color: white;
+}
+
 .hero-sec .header .btn:hover {
     background-image: none;
+    color: #0b0f75;
+}
+
+.hero-sec .header .btn:hover a {
+    /* background-image: none; */
     color: #0b0f75;
 }
 .hero-sec h2 {
@@ -101,7 +110,7 @@ nav {
     height: 28em;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #fff; /* Fallback background */
+    background-color: #fff;
 }
 .hero-sec img:hover {
     box-shadow: 0px 0px 9px 4px #0b0f75;
