@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio/Resume</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>Betelhem</h1>
+      </div>
+
+      <div class="navlinks">
+        <ul class="links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="bar-btn" id="menu-toggle">
+        <img class="open" src="/images/icon-hamburger.svg" alt="Menu" />
+        <img class="close" src="/images/icon-close.svg" alt="Close" />
+      </div>
+    </nav>
+
+    <section class="hero-sec">
+      <div class="header">
+        <h2>
+          Hi, I am <span>Betelhem</span> <br />
+          A Web Developer
+        </h2>
+        <p>Creates responsive and scalable web applications</p>
+        <button class="btn">contact</button>
+      </div>
+      <img class="img" src="/images/beth2.jpg" alt="" />
+    </section>
+
+    <section id="about" class="about">
+      <h1>About Me</h1>
+      <p>
+        Hello! I'm a Web Developer with a passion for building modern,
+        responsive, and user-friendly web applications. I specialize in HTML,
+        CSS, JavaScript, and have experience working with React, Node.js, and
+        Python to create dynamic and efficient solutions.
+      </p>
+      <h2>Education</h2>
+      <p>
+        🎓 I have completed some courses online and I’m currently a software
+        engineering student at African Leadership University, where I gained a
+        strong foundation in web development, software engineering principles,
+        and problem-solving techniques.
+      </p>
+      <h2>Work Experience</h2>
+      <p>
+        💼 Currently, I work as a Junior Developer, where I contribute to
+        building scalable web applications, optimizing performance, and
+        implementing interactive features.
+      </p>
+      <p>
+        🛠️ I have also worked on a short-term gig for a private organization,
+        where I developed a web application that extracted and processed email
+        addresses, URLs, phone numbers, and other structured data using
+        JavaScript and Python.
+      </p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h1>Skills</h1>
+      <div class="skills-list">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Python</li>
+          <li>MySQL</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <h1>Work</h1>
+      <h2>Freelance Web Developer</h2>
+      <p>Self-Employed | 2024 – Present</p>
+      <p>
+        Built custom websites and web applications for clients using modern web
+        technologies.
+      </p>
+      <p>
+        Designed interactive and responsive user interfaces for better user
+        experience.
+      </p>
+      <p>
+        Assisted businesses in improving their web presence and optimizing site
+        performance.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h1>Contact</h1>
+      <span><i class="fa-solid fa-location-dot"> </i> <p>Kigali, Rwanda</p></span>
+      <span><i class="fa-solid fa-envelope"></i> <p>b.chelebo@alustudent.com</p></span>
+      <span
+        > <i class="fa-brands fa-linkedin"></i>
+        <a
+          href="https://www.linkedin.com/in/betelhem-chelebo-b034a1322/"
+          target="_blank"
+          >linkedin</a
+        ></span
+      >
+      <span>
+        
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Betelhemf567" target="_blank"
+          >GitHub</a
+        ></span
+      >
+      <span><i class="fa-solid fa-phone"></i><p>+250795910604</p></span>
+    </section>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const navLinks = document.querySelector(".navlinks");
+          navLinks.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
